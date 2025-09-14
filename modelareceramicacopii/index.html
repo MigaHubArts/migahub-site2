@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ateliere de artă pentru copii</title>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -26,9 +24,7 @@
       z-index: 1000;
     }
 
-    header h1, header h2 {
-      margin: 0;
-    }
+    header h1, header h2 { margin: 0; }
 
     header h1:first-of-type {
       font-family: Georgia, serif;
@@ -54,9 +50,26 @@
       margin-top: 5px;
     }
 
-    nav {
-      margin-top: 10px;
+    .header-button {
+      text-decoration: none;
+      color: #000;
+      background-color: #f0eae2;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: 1.4rem;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block;
+      margin-top: 5px;
     }
+
+    .header-button:hover {
+      background-color: #008000;
+      color: #fff;
+    }
+
+    nav { margin-top: 10px; }
 
     nav a {
       margin: 0 15px;
@@ -65,9 +78,7 @@
       font-weight: 500;
     }
 
-    nav a:hover {
-      color: #008000;
-    }
+    nav a:hover { color: #008000; }
 
     section {
       max-width: 900px;
@@ -80,31 +91,17 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      padding-top: 2em; /* spațiu suplimentar la început */
+      padding-top: 2em;
       gap: 20px;
     }
 
-    #acasa-text {
-      flex: 1;
-      min-width: 250px;
-    }
+    #acasa-text { flex: 1; min-width: 250px; }
 
-    #acasa img {
-      flex: 0 0 250px;
-      max-width: 100%;
-      border-radius: 8px;
-    }
+    #acasa img { flex: 0 0 250px; max-width: 100%; border-radius: 8px; }
 
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-      color: #008000;
-    }
+    h2 { font-size: 1.6rem; margin-bottom: 10px; color: #008000; }
 
-    p {
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
+    p { line-height: 1.6; margin-bottom: 10px; }
 
     footer {
       background: #fff;
@@ -116,14 +113,8 @@
     }
 
     @media (max-width: 768px) {
-      #acasa {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #acasa img {
-        max-width: 300px;
-      }
+      #acasa { flex-direction: column; align-items: center; }
+      #acasa img { max-width: 300px; }
     }
   </style>
 </head>
@@ -131,7 +122,11 @@
   <header>
     <h1>Ateliere de artă pentru copii</h1>
     <h1>- modelare, ceramică, pictură și desen -</h1>
-    <h2>~ MiGa Hub Arts & Languages ~</h2>
+    <h2>
+      <a href="https://migahubarts.github.io/migahub-site2/" class="header-button">
+        ~ MiGa Hub Arts & Languages ~
+      </a>
+    </h2>
     <nav>
       <a href="#acasa">Acasă</a>
       <a href="#despre">Despre mine</a>
@@ -145,27 +140,19 @@
   <section id="acasa">
     <div id="acasa-text">
       <h2>Bun venit!</h2>
-      <p>
-        Atelierele MiGa Hub sunt dedicate copiilor care vor să își dezvolte imaginația și să se exprime prin artă.
-      </p>
-      <p>
-        Descoperă bucuria modelării lutului și tainele ceramicii într-un mediu creativ, prietenos și plin de culoare!
-      </p>
+      <p>Atelierele MiGa Hub sunt dedicate copiilor care vor să își dezvolte imaginația și să se exprime prin artă.</p>
+      <p>Descoperă bucuria modelării lutului și tainele ceramicii într-un mediu creativ, prietenos și plin de culoare!</p>
     </div>
     <img src="Olarit.png" alt="Olarit">
   </section>
 
   <section id="despre">
     <h2>Despre mine</h2>
-    <p>
-      Sunt Mihaela Mihalache, sculptoriță și artist vizual, pasionată de frumos și de educația prin artă. 
+    <p>Sunt Mihaela Mihalache, sculptoriță și artist vizual, pasionată de frumos și de educația prin artă. 
       De-a lungul timpului, am creat lucrări inspirate de natură și de emoțiile umane, iar experiența mea artistică 
-      se împletește cu dragostea pentru lucrul cu copiii.
-    </p>
-    <p>
-      Prin aceste cursuri neconvenționale îi ghidez pe cei mici să își descopere și să își exprime propria creativitate 
-      într-o atmosferă relaxată și artistică, de veritabil atelier de creație.
-    </p>
+      se împletește cu dragostea pentru lucrul cu copiii.</p>
+    <p>Prin aceste cursuri neconvenționale îi ghidez pe cei mici să își descopere și să își exprime propria creativitate 
+      într-o atmosferă relaxată și artistică, de veritabil atelier de creație.</p>
   </section>
 
   <section id="cursuri">
@@ -200,4 +187,3 @@
   </footer>
 </body>
 </html>
-
