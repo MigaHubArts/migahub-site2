@@ -34,8 +34,23 @@
       font-family: Georgia, serif;
       font-style: italic;
       font-weight: normal;
-      font-size: 1.6rem; /* jumătate din cât era anterior */
+      font-size: 1.6rem;
       color: #555;
+    }
+    .header-button {
+      text-decoration: none;
+      color: #000;
+      background-color: #f0eae2;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: 1.6rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .header-button:hover {
+      background-color: #b5724f;
+      color: #fff;
     }
     nav {
       margin-top: 10px;
@@ -46,22 +61,14 @@
       color: #333;
       font-weight: 500;
     }
-    nav a:hover {
-      color: #b5724f;
-    }
+    nav a:hover { color: #b5724f; }
     section {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-      color: #b5724f;
-    }
-    p {
-      line-height: 1.6;
-    }
+    h2 { font-size: 1.6rem; margin-bottom: 15px; color: #b5724f; }
+    p { line-height: 1.6; }
     footer {
       background: #fff;
       text-align: center;
@@ -71,24 +78,20 @@
       border-top: 1px solid #eee;
     }
     /* Stil pentru secțiunea Acasă */
-    #acasa {
-      margin-top: 40px;
-    }
-    .acasa-text {
-      min-width: 300px;
-    }
-    .acasa-text p:first-of-type {
-      margin-bottom: 10px;
-    }
-    .acasa-text p:last-of-type {
-      margin-top: 0;
-    }
+    #acasa { margin-top: 40px; }
+    .acasa-text { min-width: 300px; }
+    .acasa-text p:first-of-type { margin-bottom: 10px; }
+    .acasa-text p:last-of-type { margin-top: 0; }
   </style>
 </head>
 <body>
   <header>
     <h1>Cursuri online de limba franceză - orice nivel</h1>
-    <h2>~ MiGa Hub Arts & Languages ~</h2>
+    <h2>
+      <a href="https://migahubarts.github.io/migahub-site2/" class="header-button">
+        ~ MiGa Hub Arts & Languages ~
+      </a>
+    </h2>
     <nav>
       <a href="#acasa">Acasă</a>
       <a href="#despre">Despre mine</a>
