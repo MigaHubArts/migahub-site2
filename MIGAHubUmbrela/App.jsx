@@ -28,7 +28,7 @@ export default function App() {
                   <strong>1.</strong> Atelierul de limbi străine prin arte – unde comunicarea se
                   face prin limba străină aleasă 👉{" "}
                   <a
-                    href="https://migahubarts.netlify.app/"
+                    href="https://MigaHubArts.github.io/migahub-site2/ArteLS"
                     target="_blank"
                     className="text-blue-600 underline"
                   >
