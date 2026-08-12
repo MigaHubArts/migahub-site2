@@ -5,148 +5,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MiGa Hub Arts & Languages – Cursuri online de limba franceză pentru copii</title>
+  <!-- SEO -->
+  <title>Meditații Franceză Online pentru Copii | Meditații și Arte</title>
+
+  <meta
+    name="description"
+    content="Meditații și cursuri online de limba franceză pentru copii, adaptate vârstei și nivelului fiecărui elev. Lecții individuale, pregătire pentru școală, Bacalaureat, DELF și DALF."
+  >
+
+  <meta name="author" content="Mihaela Mihalache">
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://meditatiisiarte.ro/FrancezaCopii/"
+  >
+
+  <meta
+    property="og:title"
+    content="Meditații Franceză Online pentru Copii | Meditații și Arte"
+  >
+
+  <meta
+    property="og:description"
+    content="Cursuri individuale online de limba franceză pentru copii, adaptate nivelului și obiectivelor fiecărui elev."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://meditatiisiarte.ro/FrancezaCopii/"
+  >
 
   <style>
-
     html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Georgia, serif;
       margin: 0;
       padding: 0;
-      background-color: #fafafa;
+      background-color: #f3f1ee;
       color: #333;
     }
 
-    /* HEADER */
-
     header {
-      background: #f0eae2;
-      padding: 20px;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    header h1,
-    header h2 {
-      margin: 0;
-    }
-
     header h1 {
+      margin: 0 0 8px 0;
       font-family: Georgia, serif;
       font-weight: bold;
       font-size: 2rem;
       line-height: 1.3;
-      color: #000;
+      color: #333;
     }
 
-    /* LINKUL ALBASTRU MiGa Hub */
-
-    .header-button {
-      text-decoration: none;
-      color: #2563eb;
-      background-color: #f0eae2;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 1.6rem;
-      transition:
-        background-color 0.3s,
-        color 0.3s,
-        transform 0.3s,
-        box-shadow 0.3s;
+    .site-title {
       display: inline-block;
-      margin-top: 5px;
-    }
-
-    .header-button:hover {
-      background-color: #f0eae2;
+      text-decoration: underline;
       color: #2563eb;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
 
-    /* MENIUL - identic ca pe pagina de ceramică */
+    .site-title:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+      transform: translateY(-1px);
+    }
 
     nav {
-      margin-top: 10px;
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: #444;
       font-weight: 500;
-      font-family: 'Segoe UI', sans-serif;
-      transition: color 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background-color: rgba(255,255,255,0.45);
+      font-family: Georgia, serif;
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
-      color: #008000;
+      background-color: #b5724f;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
-    /* CONȚINUT */
-
     section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 10px 20px;
-      scroll-margin-top: 140px;
+      max-width: 950px;
+      margin: 24px auto;
+      padding: 26px;
+      background-color: #fffaf0;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      scroll-margin-top: 190px;
     }
 
     #acasa {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      padding-top: 2em;
-      gap: 20px;
+      gap: 28px;
+      align-items: flex-start;
     }
 
     #acasa-text {
-      flex: 1;
+      flex: 1 1 60%;
       min-width: 250px;
     }
 
-    #acasa img {
-      flex: 0 0 250px;
-      max-width: 100%;
-      border-radius: 8px;
+    #acasa-text p {
+      margin-bottom: 14px;
+    }
+
+    #acasa-imagine {
+      flex: 0 0 30%;
+      text-align: center;
+    }
+
+    #acasa-imagine img {
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
     }
 
     h2 {
       font-size: 1.6rem;
-      margin-bottom: 10px;
-      color: #b5724f;
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: #8f573c;
     }
 
     p {
-      line-height: 1.6;
-      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      background: #fff;
+      background: #e8e5e1;
       text-align: center;
-      padding: 20px;
+      padding: 22px;
       font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #eee;
+      color: #666;
+      margin-top: 30px;
     }
 
-    /* ECRANE MICI */
-
     @media (max-width: 768px) {
+      header {
+        position: relative;
+      }
 
-      nav a {
-        display: inline-block;
-        margin: 5px 10px;
+      header h1 {
+        font-size: 1.65rem;
+      }
+
+      .site-title {
+        font-size: 1.3rem;
       }
 
       #acasa {
@@ -154,185 +200,181 @@
         align-items: center;
       }
 
-      #acasa img {
-        max-width: 300px;
+      #acasa-text,
+      #acasa-imagine {
+        flex: 1 1 100%;
+        width: 100%;
       }
 
-    }
+      #acasa-imagine img {
+        max-width: 220px;
+      }
 
+      section {
+        margin: 18px 12px;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 
-
 <body>
 
-  <header>
+<header>
 
-    <h1>
-      Cursuri online de limba franceză pentru copii
-    </h1>
+  <h1>Meditații online de limba franceză pentru copii</h1>
 
-    <h2>
-      <a
-        href="https://migahubarts.github.io/migahub-site2/"
-        class="header-button"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ~ MiGa Hub Arts & Languages ~
-      </a>
-    </h2>
+  <a
+    href="https://meditatiisiarte.ro/"
+    class="site-title"
+  >
+    Meditații și Arte
+  </a>
 
-    <nav>
+  <nav>
+    <a href="#acasa">Acasă</a>
+    <a href="#despre">Despre mine</a>
+    <a href="#contact">Programări / Contact</a>
+    <a href="#cost">Prețuri</a>
+  </nav>
 
-      <a href="#acasa">Acasă</a>
+</header>
 
-      <a href="#despre">Despre mine</a>
+<section id="acasa">
 
-      <a href="#contact">Programări / Contact</a>
+  <div id="acasa-text">
 
-      <a href="#cost">Prețuri</a>
-
-    </nav>
-
-  </header>
-
-
-  <section id="acasa">
-
-    <div id="acasa-text">
-
-      <h2>Bun venit!</h2>
-
-      <p>
-        Cursurile de limba franceză MiGa Hub Arts & Languages sunt adresate
-        copiilor de toate vârstele și de toate nivelele.
-      </p>
-
-      <p>
-        Aceste cursuri sunt ideale pentru copilul dumneavoastră pentru inițiere,
-        dar și dacă urmăriți mai mult, cum ar fi îmbunătățirea nivelului de
-        franceză, a performanțelor școlare, pregătirea pentru examenul de
-        bacalaureat, pregătirea pentru certificările DALF/DELF.
-      </p>
-
-      <p>
-        Lecțiile se desfășoară online, individual, astfel încât fiecare elev
-        să învețe în ritmul care i se potrivește cel mai bine.
-      </p>
-
-      <p>
-        Folosesc metode interactive și materiale diverse, adaptate fiecărui copil.
-      </p>
-
-      <p>
-        Cursurile fiind individuale, adaptez structura, materia și conținutul
-        cursului nevoilor și stilului de învățare ale copilului dumneavoastră.
-      </p>
-
-      <p>
-        În cadrul unei prime ședințe de cunoaștere se stabilesc nivelul elevului,
-        obiectivele de învățare și orarul cursului.
-      </p>
-
-    </div>
-
-
-    <div id="acasa-imagine">
-
-      <img
-        src="fr.png"
-        alt="Steagul Franței"
-      >
-
-    </div>
-
-  </section>
-
-
-  <section id="despre">
-
-    <h2>Despre mine</h2>
+    <h2>Meditații și cursuri de franceză pentru copii</h2>
 
     <p>
-      Mă numesc Mihaela Mihalache, am absolvit Facultatea de Limbi Străine
-      (Universitatea București) și Facultatea de Arte Plastice, Sculptură
-      (Universitatea Națională de Arte).
+      Cursurile individuale de limba franceză sunt adresate
+      <strong>copiilor de toate vârstele și nivelurile</strong>,
+      de la începători până la elevii care doresc să își aprofundeze
+      cunoștințele.
     </p>
 
     <p>
-      Sunt profesor autorizat de limba franceză și de arte plastice și am multă
-      experiență de lucru cu toate categoriile de vârstă.
+      Cursurile sunt potrivite atât pentru inițiere și conversație,
+      cât și pentru îmbunătățirea nivelului de franceză,
+      creșterea performanțelor școlare și pregătirea pentru
+      <strong>examenele DELF și DALF</strong>.
     </p>
 
     <p>
-      Am lucrat atât în școli de stat, cât și în grădinițe private ca profesor
-      de limbi străine și arte.
+      Lecțiile se desfășoară <strong>online și individual</strong>,
+      astfel încât fiecare copil să poată învăța în ritmul care
+      i se potrivește cel mai bine.
     </p>
 
     <p>
-      Mi se pare deosebit de interesant să lucrez cu copiii și mă bucur în fiecare
-      zi de acest privilegiu, făcând tot posibilul ca lecțiile să devină din ce
-      în ce mai frumoase și captivante.
-    </p>
-
-  </section>
-
-
-  <section id="contact">
-
-    <h2>Programări / Contact</h2>
-
-    <p>
-      <strong>Telefon:</strong>
-      <a href="tel:0722513667">
-        0722 513 667
-      </a>
+      Metodele de lucru și materialele sunt adaptate vârstei,
+      nivelului și stilului de învățare al fiecărui copil.
     </p>
 
     <p>
-      <strong>Email:</strong>
-      <a href="mailto:arts.languages.hub@gmail.com">
-        arts.languages.hub@gmail.com
-      </a>
+      Pentru că lecțiile sunt individuale, structura și conținutul
+      cursului pot fi personalizate în funcție de nevoile și
+      obiectivele elevului.
     </p>
 
     <p>
-      Vă invit să mă contactați pentru înscrieri și informații suplimentare.
+      În cadrul primei ședințe de cunoaștere sunt stabilite
+      nivelul elevului, obiectivele de învățare și programul
+      potrivit pentru curs.
     </p>
 
-  </section>
+  </div>
 
+  <div id="acasa-imagine">
+    <img
+      src="fr.png"
+      alt="Steagul Franței – cursuri de limba franceză pentru copii"
+    >
+  </div>
 
-  <section id="cost">
+</section>
 
-    <h2>Prețuri</h2>
+<section id="despre">
 
-    <p>
-      Ședința de cunoaștere – <strong>50 RON</strong>
-    </p>
+  <h2>Despre mine</h2>
 
-    <p>
-      4 lecții de 60 de minute – <strong>500 RON</strong>
-    </p>
+  <p>
+    Mă numesc <strong>Mihaela Mihalache</strong>. Am absolvit
+    Facultatea de Limbi Străine din cadrul Universității din București
+    și Facultatea de Arte Plastice – Sculptură din cadrul
+    Universității Naționale de Arte.
+  </p>
 
-    <p>
-      Pachet de 12 lecții – <strong>1300 RON</strong>
-    </p>
+  <p>
+    Sunt profesor de limba franceză și arte plastice și am experiență
+    de lucru cu copii și elevi de diferite vârste și niveluri.
+  </p>
 
-    <p>
-      Plata se face în cont RO32BTRLRONCRT0CX2896801
-    </p>
+  <p>
+    Am lucrat atât în școli de stat, cât și în grădinițe și instituții
+    private, ca profesor de limbi străine și arte.
+  </p>
 
-  </section>
+  <p>
+    Îmi place în mod deosebit să lucrez cu copiii și urmăresc ca
+    lecțiile de limba franceză să fie clare, atractive și adaptate
+    fiecărui elev.
+  </p>
 
+</section>
 
-  <footer>
+<section id="contact">
 
-    &copy; 2025 MiGa Hub – Ateliere de limbi străine și arte plastice – Mihaela
+  <h2>Programări / Contact</h2>
 
-  </footer>
+  <p>
+    <strong>Telefon:</strong>
+    <a href="tel:0722513667">0722 513 667</a>
+  </p>
 
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:arts.languages.hub@gmail.com">
+      arts.languages.hub@gmail.com
+    </a>
+  </p>
+
+  <p>
+    Vă invit să mă contactați pentru înscrieri,
+    programări și informații suplimentare despre cursurile
+    individuale de limba franceză.
+  </p>
+
+</section>
+
+<section id="cost">
+
+  <h2>Prețuri</h2>
+
+  <p>
+    Ședința de cunoaștere de 30 de minute –
+    <strong>50 RON</strong>
+  </p>
+
+  <p>
+    4 lecții de 60 de minute –
+    <strong>500 RON</strong>
+  </p>
+
+  <p>
+    Pachet de 12 lecții –
+    <strong>1300 RON</strong>
+  </p>
+
+  <p>
+    Plata se face în cont RO32BTRLRONCRT0CX2896801
+  </p>
+
+</section>
+
+<footer>
+  &copy; 2026 Meditații și Arte – Mihaela Mihalache
+</footer>
 
 </body>
 </html>
