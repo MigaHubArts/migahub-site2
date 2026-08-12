@@ -5,163 +5,221 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MiGa Hub Arts & Languages – Ateliere de arte prin limbi străine pentru copii</title>
+  <!-- SEO -->
+  <title>Ateliere de arte prin limbi străine pentru copii | Meditații și Arte</title>
+
+  <meta
+    name="description"
+    content="Ateliere de arte prin limbi străine pentru copii în Buzău. Desen, pictură, modelaj, ceramică și tehnici mixte, cu comunicare în franceză, engleză sau germană."
+  >
+
+  <meta name="author" content="Mihaela Mihalache">
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://meditatiisiarte.ro/ArteLSSimplu/"
+  >
+
+  <meta
+    property="og:title"
+    content="Ateliere de arte prin limbi străine pentru copii | Meditații și Arte"
+  >
+
+  <meta
+    property="og:description"
+    content="Ateliere pentru copii în care desenul, pictura, modelajul și alte activități artistice se desfășoară prin comunicare în limba franceză, engleză sau germană."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://meditatiisiarte.ro/ArteLSSimplu/"
+  >
 
   <style>
-
     html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Georgia, serif;
       margin: 0;
       padding: 0;
-      background-color: #fafafa;
+      background-color: #f3f1ee;
       color: #333;
     }
 
     /* HEADER */
 
     header {
-      background: #f0eae2;
-      padding: 20px;
+      background: linear-gradient(to right, #faf8fc, #eee8f3);
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    header h1,
-    header h2 {
-      margin: 0;
-    }
-
-    header h1:first-of-type {
+    header h1 {
+      margin: 0 0 8px 0;
       font-family: Georgia, serif;
       font-weight: bold;
       font-size: 2rem;
       line-height: 1.3;
-      color: #000;
+      color: #333;
     }
 
-    /* LINKUL ALBASTRU MiGa Hub */
-
-    .header-button {
-      text-decoration: none;
-      color: #2563eb;
-      background-color: #f0eae2;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 1.6rem;
-
-      transition:
-        background-color 0.3s,
-        color 0.3s,
-        transform 0.3s,
-        box-shadow 0.3s;
-
+    .site-title {
       display: inline-block;
-      margin-top: 5px;
-    }
-
-    .header-button:hover {
-      background-color: #f0eae2;
+      text-decoration: underline;
       color: #2563eb;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
 
-    /* MENIUL - exact ca pe pagina de ceramică */
+    .site-title:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+      transform: translateY(-1px);
+    }
+
+    /* NAVIGAȚIE */
 
     nav {
-      margin-top: 10px;
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     nav button {
-      margin: 0 15px;
-      padding: 0;
       border: none;
-      background: none;
       text-decoration: none;
-      color: #333;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 1rem;
+      color: #444;
       font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background-color: rgba(255,255,255,0.45);
+      font-family: Georgia, serif;
+      font-size: 1rem;
       cursor: pointer;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     nav button:hover {
-      color: #008000;
+      background-color: #b5724f;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
     /* CONȚINUT */
 
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 20px;
-      scroll-margin-top: 140px;
+    main {
+      max-width: 950px;
+      margin: 0 auto;
     }
 
     #panou-galben {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
+      min-height: 300px;
     }
 
-    .highlight-red {
-      color: #b5724f;
-      font-weight: bold;
+    section {
+      max-width: 950px;
+      margin: 24px auto;
+      padding: 26px;
+      background-color: #fffaf0;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
-
-    /* SECȚIUNEA ACASĂ */
 
     #acasa-content {
       display: flex;
-      gap: 20px;
+      flex-wrap: wrap;
+      gap: 28px;
       align-items: flex-start;
-      margin-top: 20px;
     }
 
     #acasa-text {
-      flex: 1;
+      flex: 1 1 60%;
+      min-width: 250px;
     }
 
     #acasa-img {
-      flex: 0 0 35%;
+      flex: 0 0 30%;
+      text-align: center;
     }
 
     #acasa-img img {
       width: 100%;
-      border-radius: 8px;
+      max-width: 260px;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: #8f573c;
     }
 
     p {
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-red {
+      color: #8f573c;
+      font-weight: bold;
     }
 
     /* FOOTER */
 
     footer {
-      background: #fff;
+      background: #e8e5e1;
       text-align: center;
-      padding: 20px;
+      padding: 22px;
       font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #eee;
+      color: #666;
+      margin-top: 30px;
     }
 
-    /* TELEFON / ECRANE MICI */
+    /* MOBIL */
 
     @media (max-width: 768px) {
 
+      header {
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 1.65rem;
+      }
+
+      .site-title {
+        font-size: 1.3rem;
+      }
+
       nav button {
-        margin: 5px 10px;
+        padding: 7px 10px;
       }
 
       #acasa-content {
@@ -169,23 +227,25 @@
         align-items: center;
       }
 
+      #acasa-text,
       #acasa-img {
-        flex: 1 1 80%;
+        flex: 1 1 100%;
         width: 100%;
       }
 
       #acasa-img img {
-        width: 100%;
+        max-width: 220px;
       }
 
+      section {
+        margin: 18px 12px;
+        padding: 20px;
+      }
     }
-
   </style>
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -193,17 +253,12 @@
     Ateliere de arte prin limbi străine pentru copii
   </h1>
 
-  <h2>
-    <a
-      href="https://migahubarts.github.io/migahub-site2/"
-      class="header-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ~ MiGa Hub Arts & Languages ~
-    </a>
-  </h2>
-
+  <a
+    href="https://meditatiisiarte.ro/"
+    class="site-title"
+  >
+    Meditații și Arte
+  </a>
 
   <nav>
 
@@ -243,20 +298,15 @@
 
 </header>
 
+<main>
 
-<main id="panou-galben">
-
-  <!-- Conținutul este încărcat aici -->
+  <div id="panou-galben"></div>
 
 </main>
 
-
 <footer>
-
-  &copy; 2025 MiGa Hub – Ateliere de limbi străine și arte plastice – Mihaela
-
+  &copy; 2026 Meditații și Arte – Mihaela Mihalache
 </footer>
-
 
 <script>
 
@@ -264,217 +314,280 @@
 
     Home: `
 
-      <div id="acasa-content">
+      <section>
 
-        <div id="acasa-text">
+        <div id="acasa-content">
 
-          <p style="text-align:center; font-weight:bold;">
-            Învață limbi străine prin artă și comunicare!
-          </p>
+          <div id="acasa-text">
 
-          <p class="highlight-red">
-            - asigurați-vă locul până pe 1 septembrie pentru modulul de franceză
-          </p>
+            <p style="text-align:center; font-weight:bold;">
+              Învață limbi străine prin artă și comunicare!
+            </p>
 
-          <p class="highlight-red">
-            - asigurați-vă locul până pe 1 septembrie pentru modulul de engleză
-          </p>
+            <p>
+              Atelierele sunt destinate copiilor care doresc să descopere
+              limbi străine într-un mod creativ, prin desen, pictură,
+              modelaj, ceramică și alte activități artistice.
+            </p>
 
-          <p class="highlight-red">
-            - modulul de germană este ocupat, revin pe 10 ianuarie pentru noile module de germana prin arta -
-          </p>
+            <p class="highlight-red">
+              - asigurați-vă locul până pe 15 octombrie pentru următorul modul de franceză
+            </p>
+
+            <p class="highlight-red">
+              - asigurați-vă locul până pe 15 octombrie pentru următorul modul de engleză
+            </p>
+
+            <p class="highlight-red">
+              - pentru următoarele module de germană prin artă,
+              reveniți pentru informații despre disponibilitatea grupelor
+            </p>
+
+          </div>
+
+          <div id="acasa-img">
+
+            <img
+              src="bg21.png"
+              alt="Ateliere de arte prin limbi străine pentru copii"
+            >
+
+          </div>
 
         </div>
 
-
-        <div id="acasa-img">
-
-          <img
-            src="bg21.png"
-            alt="Cursuri prin artă"
-          >
-
-        </div>
-
-      </div>
+      </section>
 
     `,
-
 
     DespreCursuri: `
 
-      <p>
-        Bine ați venit la MiGa Hub: Arts&Languages, spațiul unde creativitatea
-        se împletește firesc cu învățarea limbilor străine.
-      </p>
+      <section>
 
-      <p>
-        În cadrul cursurilor pentru copii, activitățile artistice precum modelaj,
-        desen, origami sau colaj, se desfășoară exclusiv în limba aleasă.
-      </p>
+        <h2>Despre cursuri</h2>
 
-      <p>
-        Atelierele de limbi străine prin arte plastice combină comunicarea
-        constantă în limba țintă cu dezvoltarea creativității și a simțului estetic.
-      </p>
+        <p>
+          Bine ați venit la Meditații și Arte, spațiul unde creativitatea
+          se împletește firesc cu învățarea limbilor străine.
+        </p>
 
-      <p>
-        Puteți alege cursuri de franceză, engleză sau germană, asociate cu
-        inițierea în modelare, desen, ceramică, pictură și tehnici mixte.
-      </p>
+        <p>
+          În cadrul cursurilor pentru copii, activitățile artistice precum
+          modelajul, desenul, origami, pictura sau colajul se desfășoară
+          prin comunicare constantă în limba aleasă.
+        </p>
 
-      <p>
-        Grupurile sunt formate din 4–6 copii, vârsta recomandată fiind 5-12 ani.
-        Modulele sunt de 10 ședințe a câte 60 de minute. Prețul unui modul este
-        de 1000 RON, materialele fiind incluse în preț.
-      </p>
+        <p>
+          Atelierele de limbi străine prin arte plastice combină comunicarea
+          în limba țintă cu dezvoltarea creativității, imaginației și
+          simțului estetic.
+        </p>
+
+        <p>
+          Puteți alege cursuri de franceză, engleză sau germană, asociate
+          cu inițierea în modelare, desen, ceramică, pictură și tehnici mixte.
+        </p>
+
+        <p>
+          Grupurile sunt formate din 4–6 copii, vârsta recomandată fiind
+          5–12 ani. Modulele sunt de 10 ședințe a câte 60 de minute,
+          iar materialele sunt incluse în preț.
+        </p>
+
+      </section>
 
     `,
-
 
     DespreMine: `
 
-      <p>
-        Mă numesc Mihaela Mihalache, am absolvit facultățile de Limbi Străine
-        și Arte Plastice și sunt artist vizual, profesoară de arte plastice și limbi străine.
-      </p>
+      <section>
 
-      <p>
-        Am experiență ca artist plastic, CG artist, 3D artist, broadcast graphic
-        designer, level și game designer pentru companii precum TVR, DigiTV,
-        Ubisoft, Playtika, Activision, Amber, FunLabs.
-      </p>
+        <h2>Despre mine</h2>
 
-      <p>
-        Am predat limbi străine în școli și grădinițe private din București.
-      </p>
+        <p>
+          Mă numesc Mihaela Mihalache. Am absolvit facultățile de
+          Limbi Străine și Arte Plastice și sunt artist vizual,
+          profesoară de arte plastice și limbi străine.
+        </p>
+
+        <p>
+          Am experiență ca artist plastic, CG artist, 3D artist,
+          broadcast graphic designer, level și game designer.
+        </p>
+
+        <p>
+          Am lucrat pentru companii precum TVR, DigiTV, Ubisoft,
+          Playtika, Activision, Amber și FunLabs.
+        </p>
+
+        <p>
+          Am predat limbi străine și arte în școli și grădinițe private
+          din București.
+        </p>
+
+      </section>
 
     `,
-
 
     IntrebariFrevente: `
 
-      <p>
-        <strong>Întrebare:</strong>
-        Copilul meu nu știe limba respectivă, dar vrea să o învețe. Mă tem că
-        nu o să înțeleagă nimic, lui i-ar trebui un curs în română.
-      </p>
+      <section>
 
-      <p>
-        <strong>Răspuns:</strong>
-        Atelierele sunt concepute ca micuții să ia contact direct cu limba
-        străină respectivă și să înceapă să o învețe într-un mod cât mai natural.
-      </p>
+        <h2>Întrebări frecvente</h2>
 
-      <p>
-        <strong>Întrebare:</strong>
-        Copilul meu deja știe foarte bine limba respectivă, nu are nevoie de acest curs.
-      </p>
+        <p>
+          <strong>Întrebare:</strong>
+          Copilul meu nu știe limba respectivă. Oare va înțelege ceva?
+        </p>
 
-      <p>
-        <strong>Răspuns:</strong>
-        În cadrul atelierelor, copiii au ocazia să își exerseze și perfecționeze
-        cunoștințele de limbi străine într-un mediu relaxat și natural.
-      </p>
+        <p>
+          <strong>Răspuns:</strong>
+          Atelierele sunt concepute astfel încât cei mici să ia contact
+          direct cu limba străină și să înceapă să o învețe într-un mod
+          natural, prin activități practice și creative.
+        </p>
+
+        <p>
+          <strong>Întrebare:</strong>
+          Copilul meu deja știe foarte bine limba respectivă.
+        </p>
+
+        <p>
+          <strong>Răspuns:</strong>
+          În cadrul atelierelor, copiii au ocazia să își exerseze și
+          să își perfecționeze cunoștințele de limbi străine într-un
+          mediu relaxat și natural.
+        </p>
+
+      </section>
 
     `,
-
 
     Locatii: `
 
-      <p style="text-align:center;">
-        <strong>Arts&Languages funcționează în două locații:</strong>
-      </p>
+      <section>
 
-      <p>
-        1. Atelierul luminos și spațios din orașul Buzău, aproape de Parcul Crâng.
-      </p>
+        <h2>Locații</h2>
 
-      <p>
-        2. Atelierul de vara de la pădure, în Satul Săsenii Vechi, situat la
-        15 km de Buzău, cu terase minunate și spații de lucru deosebite.
-      </p>
+        <p style="text-align:center;">
+          <strong>Meditații și Arte funcționează în două locații:</strong>
+        </p>
+
+        <p>
+          <strong>1. Buzău</strong> – atelierul luminos și spațios
+          din orașul Buzău, aproape de Parcul Crâng.
+        </p>
+
+        <p>
+          <strong>2. Săsenii Vechi</strong> – atelierul de vară de la
+          pădure, situat la aproximativ 15 km de Buzău, cu terase
+          și spații de lucru deosebite.
+        </p>
+
+      </section>
 
     `,
-
 
     Grupe: `
 
-      <p>
-        Sâmbătă:
-      </p>
+      <section>
 
-      <ul>
-        <li>
-          10:00-11:00 → Vârsta 5 - 7 ani - FRANCEZA
-        </li>
+        <h2>Grupe</h2>
 
-        <li>
-          14:00-15:00 → Vârsta 8 - 12 ani - FRANCEZA
-        </li>
-      </ul>
+        <p>
+          <strong>Sâmbătă:</strong>
+        </p>
 
+        <ul>
+          <li>
+            10:00–11:00 → 5–7 ani – FRANCEZĂ
+          </li>
 
-      <p>
-        Duminică:
-      </p>
+          <li>
+            14:00–15:00 → 8–12 ani – FRANCEZĂ
+          </li>
+        </ul>
 
-      <ul>
-        <li>
-          10:00-11:00 → Vârsta 5 - 7 ani - ENGLEZA
-        </li>
-      </ul>
+        <p>
+          <strong>Duminică:</strong>
+        </p>
+
+        <ul>
+          <li>
+            10:00–11:00 → 5–7 ani – ENGLEZĂ
+          </li>
+        </ul>
+
+      </section>
 
     `,
-
 
     Costuri: `
 
-      <p>
-        Un modul de 10 ședințe: 1000 RON (materialele incluse)
-      </p>
+      <section>
 
-      <p>
-        Plata se face în cont RO32BTRLRONCRT0CX2896801 după rezervarea locului
-        prin telefon la numărul 0722513667.
-      </p>
+        <h2>Costuri</h2>
+
+        <p>
+          Un modul de 10 ședințe:
+          <strong>1000 RON</strong>
+          (materialele incluse).
+        </p>
+
+        <p>
+          Plata se face în cont RO32BTRLRONCRT0CX2896801 după
+          rezervarea locului prin telefon la numărul
+          <a href="tel:0722513667">0722 513 667</a>.
+        </p>
+
+      </section>
 
     `,
 
-
     Contact: `
 
-      <p>
-        📞 Telefon: 0722 513 667
-      </p>
+      <section>
 
-      <p>
-        📧 Email:
-        <a href="mailto:arts.languages.hub@gmail.com">
-          arts.languages.hub@gmail.com
-        </a>
-      </p>
+        <h2>Contact</h2>
+
+        <p>
+          <strong>Telefon:</strong>
+          <a href="tel:0722513667">
+            0722 513 667
+          </a>
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:arts.languages.hub@gmail.com">
+            arts.languages.hub@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Vă invit să mă contactați pentru înscrieri,
+          programări și informații suplimentare.
+        </p>
+
+      </section>
 
     `
 
   };
 
-
   function showSection(name) {
-
     document.getElementById('panou-galben').innerHTML =
       sections[name];
 
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
-
-
-  // Afișăm Home la încărcarea paginii
 
   showSection('Home');
 
-
 </script>
-
 
 </body>
 </html>
